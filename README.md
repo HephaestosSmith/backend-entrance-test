@@ -171,6 +171,8 @@ These are not required but will be considered a plus:
 
 ## Submission
 
+**Please fork this repository and submit a Pull Request (PR) when you've completed the implementation.**
+
 Please provide:
 
 • A GitHub repository link (make sure it's public or accessible)
