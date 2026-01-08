@@ -73,7 +73,7 @@
 - Express
 - Fastify
 - NestJS
-- 或原生 Node.js HTTP
+- 或原生 Node.js/Bun HTTP
 
 ---
 

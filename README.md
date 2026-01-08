@@ -73,7 +73,7 @@ Framework is free to choose:
 - Express
 - Fastify
 - NestJS
-- Or native Node.js HTTP
+- Or native Node.js/Bun HTTP
 
 ---
 
