@@ -69,6 +69,7 @@
 
 框架可自由選擇：
 
+- Elysia.js
 - Express
 - Fastify
 - NestJS

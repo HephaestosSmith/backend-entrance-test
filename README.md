@@ -69,6 +69,7 @@ Request Body:
 
 Framework is free to choose:
 
+- Elysia.js
 - Express
 - Fastify
 - NestJS
