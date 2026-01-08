@@ -158,7 +158,7 @@ Please provide:
 
 - A GitHub repository link (make sure it's public or accessible)
 - Clear instructions to run the project (including Node.js version requirement, if any)
-- `package.json` with all necessary scripts (e.g., `npm start`, `npm run dev`)
+- `package.json` with all necessary scripts (e.g., `bun start`, `bun run dev`)
 - (Optional) Notes on design decisions and trade-offs
 - (Optional) Brief explanation of your architecture choices
 
