@@ -11,8 +11,9 @@ Please implement a **plugin-based message processing system** using **TypeScript
 The system should accept different types of messages and dispatch them to the correct handler based on the message type.
 
 **Note:**
-• You can use any package manager (npm, yarn, bun, pnpm, etc.)
-• If you're not familiar with TypeScript, you may use JavaScript instead (though TypeScript is preferred)
+
+- You can use any package manager (npm, yarn, bun, pnpm, etc.)
+- If you're not familiar with TypeScript, you may use JavaScript instead (though TypeScript is preferred)
 
 Example message:
 
@@ -42,8 +43,8 @@ Example response:
 
 The system must support at least:
 
-• email
-• sms
+- email
+- sms
 
 Future message types (e.g., LINE, Slack, Webhook) should be easy to add without modifying core logic.
 
@@ -66,17 +67,17 @@ Request Body:
 }
 ```
 
-• Accepts { type, payload }
-• Dispatches to the correct handler
-• Returns the handler's result
-• Should return appropriate HTTP status codes (200 for success, 400 for bad request, 404 for unknown message type, 500 for server errors)
+- Accepts { type, payload }
+- Dispatches to the correct handler
+- Returns the handler's result
+- Should return appropriate HTTP status codes (200 for success, 400 for bad request, 404 for unknown message type, 500 for server errors)
 
 Framework is free to choose:
 
-• Express
-• Fastify
-• NestJS
-• Or native Node.js HTTP
+- Express
+- Fastify
+- NestJS
+- Or native Node.js HTTP
 
 ---
 
@@ -88,15 +89,15 @@ You must implement:
 
 Defines:
 
-• `type: string`
-• `handle(payload: any): Promise<any> | any`
+- `type: string`
+- `handle(payload: any): Promise<any> | any`
 
 **Handlers**
 
 Implement at least:
 
-• EmailHandler
-• SmsHandler
+- EmailHandler
+- SmsHandler
 
 Each handler must implement the MessageHandler interface.
 
@@ -104,10 +105,10 @@ Each handler must implement the MessageHandler interface.
 
 Responsible for:
 
-• Registering handlers
-• Mapping type → handler
-• Dispatching messages
-• Handling unknown types
+- Registering handlers
+- Mapping type → handler
+- Dispatching messages
+- Handling unknown types
 
 ---
 
@@ -130,28 +131,22 @@ src/
 Database is not required.
 All data may be stored in memory.
 
-**Note**: You should include:
-• `package.json` with all dependencies
-• `tsconfig.json` for TypeScript configuration
-• `.gitignore` file
-• Clear instructions in README for setup and running
-
 ---
 
 ## Bonus Points (Optional)
 
 These are not required but will be considered a plus:
 
-• Use of TypeScript features (interface, type, enum, generics)
-• Dependency Injection or factory pattern
-• Async handler support (simulate external API calls with delays)
-• Input validation (Zod, class-validator, etc.)
-• Comprehensive error handling (400/404/500 with meaningful error messages)
-• Unit tests (Jest / Vitest) with good coverage
-• Dynamic plugin loading (scan folder automatically)
-• Logging (console.log is acceptable, but structured logging is a plus)
-• Consistent error response format
-• Type-safe payloads (using TypeScript types/interfaces instead of `any`)
+- Use of TypeScript features (interface, type, enum, generics)
+- Dependency Injection or factory pattern
+- Async handler support (simulate external API calls with delays)
+- Input validation (Zod, class-validator, etc.)
+- Comprehensive error handling (400/404/500 with meaningful error messages)
+- Unit tests (Jest / Vitest) with good coverage
+- Dynamic plugin loading (scan folder automatically)
+- Logging (console.log is acceptable, but structured logging is a plus)
+- Consistent error response format
+- Type-safe payloads (using TypeScript types/interfaces instead of `any`)
 
 ---
 
@@ -175,11 +170,11 @@ These are not required but will be considered a plus:
 
 Please provide:
 
-• A GitHub repository link (make sure it's public or accessible)
-• Clear instructions to run the project (including Node.js version requirement, if any)
-• `package.json` with all necessary scripts (e.g., `npm start`, `npm run dev`)
-• (Optional) Notes on design decisions and trade-offs
-• (Optional) Brief explanation of your architecture choices
+- A GitHub repository link (make sure it's public or accessible)
+- Clear instructions to run the project (including Node.js version requirement, if any)
+- `package.json` with all necessary scripts (e.g., `npm start`, `npm run dev`)
+- (Optional) Notes on design decisions and trade-offs
+- (Optional) Brief explanation of your architecture choices
 
 ---
 
@@ -188,10 +183,11 @@ Please provide:
 You have **1 hour** to complete the implementation.
 
 **Important Notes:**
-• You may use AI tools to assist, but you should understand and be able to explain your code
-• Focus on core functionality first, then add bonus features if time permits
-• Code quality and architecture are more important than feature completeness
-• Make sure the code compiles and runs without errors
+
+- You may use AI tools to assist, but you should understand and be able to explain your code
+- Focus on core functionality first, then add bonus features if time permits
+- Code quality and architecture are more important than feature completeness
+- Make sure the code compiles and runs without errors
 
 ---
 
